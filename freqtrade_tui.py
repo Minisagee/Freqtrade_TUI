@@ -6,9 +6,9 @@ import shlex
 import re
 
 # Paths to directories
-STRATEGY_PATH = "/home/minisage/Documents/freqtrade/user_data/strategies"
-CONFIG_PATH = "/home/minisage/Documents/freqtrade/user_data/configs"
-RESULTS_PATH = "/home/minisage/Documents/freqtrade/user_data/results"
+STRATEGY_PATH = "/home/user/Documents/freqtrade/user_data/strategies"
+CONFIG_PATH = "/home/user/Documents/freqtrade/user_data/configs"
+RESULTS_PATH = "/home/user/Documents/freqtrade/user_data/results"
 
 # Available values for timeframe, timerange, spaces, and loss_functions
 TIMEFRAMES = ["1m", "5m", "15m", "30m", "1h", "4h", "8h", "1d"]
