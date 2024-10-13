@@ -1,7 +1,8 @@
-Freqtrade Text User Interface
+Freqtrade Text User Interface.
+
 This script automates various tasks related to Freqtrade, a cryptocurrency trading platform. It provides an interactive command-line interface to perform actions such as testing strategies, downloading data, hyperparameter optimization, trading, and plotting profit graphs.
 
-Features
+Features:
 Test Strategies: Backtest one or all strategies over specified timeframes and timeranges.
 Download Data: Download historical market data for specified timeframes and timeranges.
 Hyperopt: Optimize hyperparameters for one or all strategies using different loss functions and parameter spaces.
@@ -10,6 +11,7 @@ Plot: Generate profit graphs for strategies over specified pairs and timeranges.
 Prerequisites
 Python 3.x
 Freqtrade installed and configured.
+
 Required Python packages:
 os
 concurrent.futures
@@ -29,12 +31,7 @@ CONFIG_PATH = "/path/to/your/freqtrade/user_data/configs"
 RESULTS_PATH = "/path/to/your/freqtrade/user_data/results"
 Ensure that your strategies are placed in the strategies directory and your configuration files are in the configs directory.
 
-Usage
-Run the script using Python:
-
-bash
-Copy code
-python freqtrade_automation.py
+python freqtrade_tui.py
 The script will prompt you to select an action:
 
 Test Strategies
@@ -63,11 +60,11 @@ Results
 Outputs and logs from the commands are saved in the results directory.
 Filenames are generated based on the action, strategy name, and command executed.
 Long filenames are shortened while ensuring uniqueness using a hash.
+
+
 Customization
 Timeframes, Timeranges, Spaces, and Loss Functions: You can customize the available options by modifying the respective lists at the beginning of the script.
 
-python
-Copy code
 TIMEFRAMES = ["1m", "5m", "15m", "30m", "1h", "4h", "8h", "1d"]
 TIMERANGES = ["20200101-", "20210101-20211231", ...]
 SPACES = ["roi stoploss", "buy sell", "all", ...]
@@ -75,9 +72,10 @@ LOSS_FUNCTIONS = ["SharpeHyperOptLoss", "SortinoHyperOptLoss", ...]
 Max Workers for ThreadPoolExecutor: Adjust the number of workers for parallel execution in the testing phase by changing the max_workers parameter.
 
 python
-Copy code
 with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
     # ...
+
+
 Error Handling
 The script includes error handling for subprocess execution and file operations.
 Timeouts are set for long-running commands during parallel execution.
