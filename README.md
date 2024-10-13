@@ -10,6 +10,7 @@ This script automates various tasks related to Freqtrade, a cryptocurrency tradi
 - **Hyperopt**: Optimize hyperparameters for one or all strategies using different loss functions and parameter spaces.
 - **Trade**: Run live or dry-run trading sessions with selected strategies.
 - **Plot**: Generate profit graphs for strategies over specified pairs and timeranges.
+
 ![Screenshot 2024-10-13 225021](https://github.com/user-attachments/assets/771b8966-8bfd-4ff5-be2b-8c6b59664f0a)
 
 ## Prerequisites
