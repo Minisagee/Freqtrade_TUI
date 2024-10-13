@@ -26,8 +26,11 @@ Clone or download the script and place it in your desired directory.
 Update the directory paths at the beginning of the script to match your Freqtrade setup:
 
 STRATEGY_PATH = "/path/to/your/freqtrade/user_data/strategies"
+
 CONFIG_PATH = "/path/to/your/freqtrade/user_data/configs"
+
 RESULTS_PATH = "/path/to/your/freqtrade/user_data/results"
+
 Ensure that your strategies are placed in the strategies directory and your configuration files are in the configs directory.
 
 python freqtrade_tui.py
