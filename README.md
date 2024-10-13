@@ -19,13 +19,12 @@ subprocess
 hashlib
 shlex
 re
-Setup
+
+Setup:
 Clone or download the script and place it in your desired directory.
 
 Update the directory paths at the beginning of the script to match your Freqtrade setup:
 
-python
-Copy code
 STRATEGY_PATH = "/path/to/your/freqtrade/user_data/strategies"
 CONFIG_PATH = "/path/to/your/freqtrade/user_data/configs"
 RESULTS_PATH = "/path/to/your/freqtrade/user_data/results"
@@ -71,9 +70,7 @@ SPACES = ["roi stoploss", "buy sell", "all", ...]
 LOSS_FUNCTIONS = ["SharpeHyperOptLoss", "SortinoHyperOptLoss", ...]
 Max Workers for ThreadPoolExecutor: Adjust the number of workers for parallel execution in the testing phase by changing the max_workers parameter.
 
-python
 with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
-    # ...
 
 
 Error Handling
